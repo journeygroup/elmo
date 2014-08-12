@@ -38,8 +38,10 @@ class Elmo{
 
 
     // Unable to locate the rotue
-    if (!file_exists($this->route))
+    if (!file_exists($this->route)) {
+      header("HTTP/1.0 404 Not Found");
       throw new Exception('Unable to locate the route: ' . $this->route);
+    }
   }
 
 
