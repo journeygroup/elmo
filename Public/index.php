@@ -3,7 +3,7 @@
 require_once '../elmo.php';
 
 // Create a new instance of elmo
-$elmo = new Elmo();
+$elmo = new Elmo\Elmo();
 
 // Render elmo to string
 $elmo->render()->out();
