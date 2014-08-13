@@ -120,8 +120,12 @@ class Elmo{
     $routes = static::seek(static::$routeDirectory . '/*.php');
     $routes = preg_replace("/^" . static::$routeDirectory . "\//", "", $routes);
     
-    // if we actually have output, create the directory structure
-    if (count($routes)) exec("cp -r Public " . $directory);
+    // if we actually have output, create the directory
+    if (count($routes)) {
+      exec("cp -r Public " . $directory);
+      unlink($directory . '/index.php');
+      unlink($directory . '/.htaccess');
+    }
 
     foreach ($routes as $route) {
       if (preg_match("/index\.php$/", $route))
