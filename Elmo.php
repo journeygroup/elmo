@@ -41,7 +41,7 @@ class Elmo
         // Unable to locate the rotue
         if (!file_exists($this->route)) {
             header("HTTP/1.0 404 Not Found");
-            throw new Exception('Unable to locate the route: ' . $this->route);
+            throw new \Exception('Unable to locate the route: ' . $this->route);
         }
     }
 
@@ -57,7 +57,7 @@ class Elmo
             // If we've already created output, re-render
             return $this;
         } else {
-            throw new Exception('Unable to load the layout: ' . $this->layoutsDirectory . '/' . $layout . '.php');
+            throw new \Exception('Unable to load the layout: ' . $this->layoutsDirectory . '/' . $layout . '.php');
         }
     }
 
