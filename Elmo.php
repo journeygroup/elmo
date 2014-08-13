@@ -26,8 +26,8 @@ class Elmo
     public function __construct($route = false)
     {
         chdir(__DIR__);
-        $route = ($route) ? str_replace(".php", "", $route):str_replace("index.php", "", $_GET['q']);
-        
+        $route = ($route) ? str_replace(".php", "", $route):preg_replace(["/(index\.php)$/", "/\/$/"], "", $_GET['q']);
+
         if (!$route) {
             $route = 'index';
         }
