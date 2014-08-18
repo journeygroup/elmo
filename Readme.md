@@ -34,7 +34,7 @@ The above structure would resolve to the following URLs:
 
 Layouts are simply html templates. Route files are nested inside layouts, no, there's no silly templating language, turns out PHP is capable of outputting strings too! Here's an example of a basic layout:
 
-	# File: Layouts/master.php
+	<!-- File: Layouts/master.php -->
 	<html>
 	<head>
 		<title>Sample Layout</title>
@@ -46,7 +46,7 @@ Layouts are simply html templates. Route files are nested inside layouts, no, th
 
  Only one layout may be used per route. Any php variables defined in a layout are accessible within the route file as well. As a bonus, route files can define what layout they should be rendered with. 
  
- 	# File: Routes/products/index.php
+ 	<!-- File: Routes/products/index.php -->
  	<?php $this->setLayout('products'); ?>
  	<h1>Available Products</h1>
  	...
