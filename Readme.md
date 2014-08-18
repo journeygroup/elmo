@@ -11,7 +11,7 @@ The name comes from [the natural static electricity phenomenon, St. Elmo's Fire]
 
 ### Routes
 
-Unpack Elmo, and point an Apache server at the Public directory. Add routes (pages) to your project by simply creating php files inside the Routes directory. All files are resolved to clean urls. 
+Unpack Elmo, and point an Apache server at the Public directory. Add routes (pages) to your project by simply creating php files inside the Routes directory. All files are resolved to clean urls. Example:
 
 	Routes/
 	 - index.php
