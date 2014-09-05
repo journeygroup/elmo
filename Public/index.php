@@ -1,9 +1,9 @@
 <?php
-// Include St. Elmo's Fire
-require_once '../elmo.php';
+// Start the autoloader
+require_once "../vendor/autoload.php";
 
 // Create a new instance of elmo
-$elmo = new Elmo\Elmo();
+$elmo = new Schroeder\Elmo();
 
 // Render elmo to string
 $elmo->render()->out();

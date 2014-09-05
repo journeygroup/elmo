@@ -3,11 +3,18 @@ Elmo
 
 # Why
 
-Simplicity. Elmo is a super lightweight, single-file, scaffold for creating static web features. You don't need to install anything (LAMP stack is fine), don't need to learn a templating language, you don't need a package manager, and you're ~~free~~ encouraged to hack it. At its core, Elmo is less than 200 lines that can be run dynamically for development, or output to static files for production.  
+Simplicity. Elmo is a super lightweight, single-file, scaffold for creating static web features. You don't need to install any special tools (LAMP stack is fine), don't need to learn a templating language, and you're ~~free~~ encouraged to hack it. Elmo is less than 200 lines that can be run dynamically for rapid development, and produce static files for production.  
 
 The name comes from [the natural static electricity phenomenon, St. Elmo's Fire](http://en.wikipedia.org/wiki/St._Elmo's_fire).
 
 # Usage
+
+### Installation
+
+The easiest and quickest way to install Elmo is via composer:
+
+	composer create-project schroeder/elmo your-project-name
+
 
 ### Routes
 
@@ -41,7 +48,7 @@ Layouts are simply html templates. Route files are nested inside layouts, no, th
 		<title>Sample Layout</title>
 	</head>
 	<body>
-		<?php include $this->route ?>
+		<?php include $this->route; ?>
 	</body>
 </html>
 ```
@@ -62,10 +69,14 @@ The above code sample would render the route using Layouts/products.php layout f
 
 Once you're development is complete, pop open a terminal, navigate to your project and execute:
 
-	php Elmo.php ~/your_output_directory
+	php elmo ~/your_output_directory
 	
 Done.
 
+### Wishlist
+
+Layout nesting is the next feature on the docket.
+
 ### Notes
 
-This was written in 1/2 a morning, be gracious. Pull requests gladly accepted.
+Pull requests gladly accepted.
