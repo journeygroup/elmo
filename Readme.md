@@ -16,7 +16,7 @@ The easiest and quickest way to install Elmo is via composer:
 	composer create-project schroeder/elmo your-project-name
 
 
-### Existing repository
+### Installing an existing project
 
 If you’re cloning an existing Elmo project, any dependencies will be ignored. Run `composer install` from within the project’s directory to install dependencies according to the composer.lock file (or composer.json if no composer.lock file is present).
 
