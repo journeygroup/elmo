@@ -1,6 +1,6 @@
 <?php
 
-namespace Schroeder;
+namespace Journey;
 
 class Elmo
 {

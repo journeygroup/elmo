@@ -1,5 +1,5 @@
 {
-    "name": "schroeder/elmo",
+    "name": "journeygroup/elmo",
     "type": "project",
     "description": "Super-lightweight single-file for producing static web features",
     "keywords": ["framework", "static"],
@@ -8,8 +8,14 @@
     "authors": [
         {
             "name": "Justin Schroeder",
-            "email": "justinschroeder@me.com",
+            "email": "justins@journeygroup.com",
             "homepage": "http://jpschroeder.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Josh Bryant",
+            "email": "joshb@journeygroup.com",
+            "homepage": "http://www.joshuabryant.me/",
             "role": "Developer"
         }
     ],
@@ -18,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Schroeder\\": "src"
+            "Journey\\": "src"
         }
     }
 }

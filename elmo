@@ -2,5 +2,5 @@
 include "vendor/autoload.php";
 
 if (php_sapi_name() == 'cli') {
-    Schroeder\Elmo::bundle();
+    Journey\Elmo::bundle();
 }

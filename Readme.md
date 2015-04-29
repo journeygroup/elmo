@@ -13,7 +13,7 @@ The name comes from [the natural static electricity phenomenon, St. Elmo's Fire]
 
 The easiest and quickest way to install Elmo is via composer:
 
-	composer create-project schroeder/elmo your-project-name
+	composer create-project journeygroup/elmo your-project-name
 
 
 ### Installing an existing project
