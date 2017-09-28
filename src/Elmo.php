@@ -102,7 +102,8 @@ class Elmo
     public function save($location)
     {
         if (!is_dir(dirname($location))) {
-            mkdir(dirname($location));
+            // Make necessary directories, recursively if necessary.
+            mkdir(dirname($location), 0777, true);
         }
         file_put_contents($location, $this->output);
         return $this;
